@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* height: 100vh;*/
+  box-sizing: border-box;
+  background-color: #ECECEC;
+  color: #5AB2F0;
+}
+
+/*Cabeçalho*/
+.cabeçalho {
+
+  /* Coloca os itens (menu e ícone) lado a lado */
+  justify-content: space-between;
+  /* Espaça entre eles */
+  align-items: center;
+  /* Centraliza verticalmente */
+  display: block;
+  position: fixed;
+  background-color: #ECECEC;
+  padding: 0px;
+  width: 100%; 
+}
+
+.cabeçalho__menu {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cabeçalho__menu__icone {
+  padding-top: 1%;
+  padding-right: 2%;
+}
+
+.cabeçalho__menu__link {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #5ab2f0;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.item__menu {
+  list-style-type: none;
+  padding-left: 2%;
+}
+
+.item__home {
+display:none;
+}
+
+.item__sobre {
+display:none;
+}
+
+.item__experiencia {
+display:none;
+}
+
+.item__projetos {
+display:none;
+}
+
+.item__contato {
+display:none;
+}
+
+/* ------ DROPDOWN ------ */
+
+.dropdown__menu {
+    position: absolute;
+    box-shadow: 0 0 4px 0 black;
+    background-color: #F9F9F9;
+    display: none;
+}
+
+.dropdown__menu__a {
+display: block;
+padding: 16px;
+text-decoration: none;
+font-family: Montserrat;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+color:#5AB2F0;
+}
+
+.dropdown__menu a:hover {
+background-color: #5ab2f0;
+color: #F9F9F9;
+}
+
+.item__menu:hover .dropdown__menu {
+display: block;
+}
+
+
+
+/*aula 07/11*/
+
+.form {
+  display: flex;
+  justify-content: center;
+  vertical-align: baseline;
+}
+
+.cabeçalho__pesquisar__icon {
+  display: block;
+  align-content: center;
+}
+
+.pesquisar__input {
+  width: 260px;
+  height: 32px;
+
+  border: 1px solid rgb(211, 211, 211);
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.pesquisar__label {
+    background-image: url(../assets/label_pesquisar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 32px;
+    border: 1px solid #ECECEC;
+    background-color: #ECECEC;
+    border-left: none;
+    padding: 0px 18px 0px;
+    cursor: pointer;
+}
+
+
+/*main*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 300px;
+  padding: 10% 12%;
+}
+
+.container__conteudo__column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.container__conteudo__row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 8%;
+  justify-content: space-between;
+}
+
+.container__conteudo__titulo {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.12rem;
+}
+
+.container__imagem__main {
+  width: 40%;
+}
+
+.container__conteudo__texto {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #5AB2F0;
+}
+
+.container__conteudo__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.container__conteudo__links__visual {
+  background-color: #5AB2F0;
+  border: 3px solid #5ab2f0;
+  color: #ECECEC;
+  fill: #ECECEC;
+  width: 50%;
+  text-align: center;
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  padding: 15px 0px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container__conteudo__links__visual:hover {
+  background-color: #ECECEC;
+  border: 3px solid #5ab2f0;
+  color: #5ab2f0;
+  fill: #5ab2f0;
+}
+
+/*divisoria*/
+
+.divisorias__centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem__divisoria {
+  width: 100%;
+}
+
+
+/*box*/
+
+.container__conteudo__column__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 45px;
+  padding: 78px;
+  padding-bottom: 90px;
+  background-color: #5ab2f0;
+  border-radius: 40px;
+}
+
+
+.container_conteudo_box {
+  color: #ECECEC;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+/*topicos*/
+
+.box__topicos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 3% 10%;
+  list-style-type: none;
+  /*tirar pontinho da lista*/
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.box__topico__h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.12rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.box__topico__h2 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.18rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.box__topico__h3 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*projetos*/
+
+.container__conteudo__column__projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 180px;
+}
+
+.projetos__portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.projetos__portfolio__gap__entre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+}
+
+.projetos__portfolio__h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.12rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.projetos__portfolio__h2 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.18rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.projetos__portifolio__botão {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: #ECECEC;
+  background-color: #5ab2f0;
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%;
+  border: 3px solid #5ab2f0;
+}
+
+.projetos__portifolio__botão:hover {
+  color: #5ab2f0;
+  background-color: #ECECEC;
+   border: 3px solid #5ab2f0;
+}
+
+/*Rodape*/
+
+.rodape {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background-color: #5ab2f0;
+  text-align: center;
+  padding: 70px;
+  color: #ECECEC;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.rodape__h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 31px;
+  color: #ECECEC;
+}
+
+.rodape__destaque {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #ECECEC;
+}
+
+
+
+
+@media (max-width: 480px) {
+
+  .container__conteudo__row {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .cabeçalho {
+    padding: 0%;
+  }
+  .cabeçalho__menu {
+    gap: 20px;
+    width: 100%;
+  }
+
+  .item__menu {
+    padding-left: 10%;
+  }
+
+  .container {
+    padding-top: 20%;
+    padding-inline: 5%;
+    padding-bottom: 20%;
+  }
+
+  .container__conteudo__column {
+    width: 100%;
+  }
+
+  .container__imagem__main {
+    align-items: center;
+    width: 100%;
+  }
+
+  .container__conteudo__column__box {
+    padding: 60px;
+  }
+  
+  .box__topicos {
+     padding: 3% 3%;
+  }
+
+  .projetos__portfolio {
+    justify-content: center;
+    width: 50%;
+  }
+
+  .projetos__portfolio__imagens {
+    width: 100%;
+  }
+
+  .container__conteudo__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.softwares {
+  width: 75%;
+}
+
+  .container__conteudo__links__visual {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .imagem__divisoria {
+    width: 100%;
+  }
+
+  /* ------ TEXTOS ------ */
+
+.container__conteudo__titulo {
+  font-size: 2.6rem;
+}
+
+.container__conteudo__texto {
+  font-size: 1.2rem;
+}
+
+.box__topicos {
+  font-size: 1.2rem;
+}
+
+.box__topico__h1 {
+  font-size: 2.6rem;
+}
+
+.box__topico__h2 {
+  font-size: 2rem;
+}
+
+.box__topico__h3 {
+  font-size: 1.5rem;
+}
+
+.projetos__portfolio__h1 {
+  font-size: 2.6rem;
+}
+
+.projetos__portfolio__h2 {
+  font-size: 2rem;
+}
+
+
+
+}
